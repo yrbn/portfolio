@@ -7,12 +7,13 @@
   
 
   <title>Yurii Rybin Portfolio Page</title>
+  <link rel="icon" href="./dist/img/favicon.ico" type="image/x-icon">
 
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/app.css">
+  <link rel="stylesheet" href="./dist/css/app.css">
 </head>
 
 <body>
@@ -96,7 +97,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-sm-12 pull-right">
-          <img class="img-responsive img-thumbnail about_photo" src="./assets/img/photo.jpg" alt="My photo">
+          <img class="img-responsive img-thumbnail about_photo" src="./dist/img/photo.jpg" alt="My photo">
         </div>
         <div class="col-lg-6 col-sm-12">
           <div class="clearfix"></div>
@@ -127,12 +128,12 @@
           <div class="row">
             <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item">
               <a href="#" data-toggle="modal" data-target="#myModal1">
-                <img class="img-responsive img-thumbnail portfolio_img" src="./assets/img/Informer.png" alt="Portfolio photo 1">
+                <img class="img-responsive img-thumbnail portfolio_img" src="./dist/img/Informer.png" alt="Portfolio photo 1">
               </a>
             </div>
             <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item">
-              <a href="#" target="_blank">
-                <img class="img-responsive img-thumbnail portfolio_img" src="http://www.designboom.com/shop/wp-content/uploads/2015/11/Empty-Memory_-Low-Res_041.jpg" alt="2">
+              <a href="#" data-toggle="modal" data-target="#myModal2">
+                <img class="img-responsive img-thumbnail portfolio_img" src="./dist/img/website_pregnancy.png" alt="2">
               </a>
             </div>
             <div class="col-lg-4 col-sm-6 col-xs-12 portfolio-item">
@@ -159,6 +160,71 @@
         </div>
       </div>
     </div><!-- /.container -->
+
+    <div class="modal fade" id="myModal1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Pharmacies search</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8 col-xs-12">
+                <img class="img-responsive" src="./dist/img/Informer.png" alt="Portfolio photo 1">
+              </div>
+              <div class="col-md-4 col-xs-12">
+                <h3>Project description</h3>
+                <p>Widget for medical websites. Shows on the map where you can buy necessary medicine. Can be opened in modal window or implemented to the html as independent block. Google Maps API is used. You can choose region and city. Details are shown by clicking on the marker.</p>
+                <h3>Project details</h3>
+                <ul>
+                  <li><a href="https://github.com/yrbn/pharmacies_map" target="_blank">Github link</a></li>
+                  <li><a href="https://tabletki.ua/support/widget/" target="_blank">Working example</a></li>
+                  <li><a href="https://tabletki.ua/support/constructor/" target="_blank">Widget constructor</a></li>
+                  <li><a href="http://essliver-forte.tabletki.ua/wheretobuy" target="_blank">Production link #1</a></li>
+                  <li><a href="http://biogaia.tabletki.ua/" target="_blank">Production link #2</a> (click green buttons in the bottom of the website)</li>
+                  <li><a href="http://edinstvennaya.ua/health/family/14835-bitva-s-allergiey-vyigryvaem-krasivo" target="_blank">Production link #3</a> (click pink button in the bottom of the website)</li>
+                  <li><a href="http://kamistad-bebi.tabletki.ua/wheretobuy" target="_blank">Production link #4</a></li>
+                  <li><a href="http://laktimak-forte.tabletki.ua/wheretobuy" target="_blank">Production link #5</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Website</h3>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8 col-xs-12">
+                <img class="img-responsive" src="./dist/img/website_pregnancy.png" alt="Portfolio photo 2">
+              </div>
+              <div class="col-md-4 col-xs-12">
+                <h3>Project description</h3>
+                <p>Responsible website for reproductive medicine clinic</p>
+                <h3>Project details</h3>
+                <ul>
+                  <li><a href="https://github.com/yrbn/website_pregnancy" target="_blank">Github link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div><!-- /.portfolio -->
 
   <!-- Contacts -->
@@ -219,41 +285,11 @@
       </div>
     </div>
   </footer>
-
-  <div class="modal fade" id="myModal1" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Pharmacies search</h4>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-md-8 col-xs-12">
-              <img class="img-responsive" src="./assets/img/Informer.png" alt="Portfolio photo 1">
-            </div>
-            <div class="col-md-4 col-xs-12">
-              <h3>Project description</h3>
-              <p>The search where to buy neccessary medicine. Shown in the modal window with Google Maps API. You can choose region and city. Details are shown by click on the marker.</p>
-              <h3>Project details</h3>
-              <ul>
-                <li><a href="">Github link</a></li>
-                <li><a href="">Link in production</a> (click a green button)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
   
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="./assets/js/app.js"></script>
+  <script src="./dist/js/app.js"></script>
 </body>
 </html>
